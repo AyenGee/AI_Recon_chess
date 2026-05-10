@@ -1,6 +1,7 @@
 import chess
 import chess.engine
 
+# TODO: Buggy — opens Stockfish twice (line 4 + line 20), engine.quit() at line 38 references the wrong one" 
 engine = chess.engine.SimpleEngine.popen_uci('./stockfish', setpgrp=True)
 
 def get_move(fen_string: str) -> list:
