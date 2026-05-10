@@ -1,7 +1,7 @@
 import chess
 import chess.engine
 from collections import Counter
-
+# TODO: Same double-open bug; also missing the random tiebreak the rubric requires
 engine = chess.engine.SimpleEngine.popen_uci('./stockfish', setpgrp=True)
 
 def get_move(fen_string: str) -> list:
